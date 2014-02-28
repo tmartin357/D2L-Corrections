@@ -1,0 +1,10 @@
+.d2l-max-width {
+	max-width: none !important;
+}
+.d2l-navbar-container{
+	background-repeat: repeat !important;
+}
+.d2l-background-global > div {
+	background-image: none !important;
+	background-color: rgb(228, 228, 228);
+}

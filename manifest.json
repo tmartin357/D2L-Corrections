@@ -1,0 +1,14 @@
+{
+    "name": "D2L Corrections",
+    "content_scripts": [
+        {
+         "matches": [
+            "*://spsu.view.usg.edu/*"
+         ],
+         "css": ["correct.css"],
+         "run_at" : "document_end"
+        }
+    ],
+    "version":"0.0.0.4",
+	"manifest_version": 2
+}
