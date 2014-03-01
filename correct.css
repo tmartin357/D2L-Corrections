@@ -8,3 +8,13 @@
 	background-image: none !important;
 	background-color: rgb(228, 228, 228);
 }
+.d2l-menuflyout-link-hover {
+	max-width: none !important;
+}
+.d2l-menuflyout-link-link {
+	max-width: none !important;
+}
+.d_nb_cTop{
+	height: 0px;
+	visibility: hidden;
+}

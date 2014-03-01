@@ -9,6 +9,6 @@
          "run_at" : "document_end"
         }
     ],
-    "version":"0.0.0.4",
+    "version":"0.0.0.5",
 	"manifest_version": 2
 }
