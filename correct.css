@@ -1,20 +1,46 @@
-.d2l-max-width {
-	max-width: none !important;
+/*Globals*/
+.d_nb_cGlobal{
+	/*background-color: #00573D;
+	background: -moz-linear-gradient( top, #008852 0%, #00573D 100% );*/
+	background: -webkit-linear-gradient( top, #008852 0%, #00573D 100% ) !important;
+	/*background: -ms-linear-gradient( top, #008852 0%, #00573D 100% );
+	background: linear-gradient( top, #008852 0%, #00573D 100% );*/
 }
-.d2l-navbar-container{
+/*.d2l-navbar-container{
 	background-repeat: repeat !important;
-}
+}*/
 .d2l-background-global > div {
 	background-image: none !important;
 	background-color: rgb(228, 228, 228);
 }
-.d2l-menuflyout-link-hover {
-	max-width: none !important;
-}
-.d2l-menuflyout-link-link {
-	max-width: none !important;
-}
 .d_nb_cTop{
 	height: 0px;
 	visibility: hidden;
+}
+.d2l-navbar-title{
+	height: 28px;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*Bigger than and equal to 1078px*/
+@media screen and (min-width: 1078px) {
+	.d2l-max-width {
+		max-width: 90% !important;
+	}
+	.d2l-menuflyout-link-hover {
+		max-width: 100% !important;
+	}
+	.d2l-menuflyout-link-link {
+		max-width: 100% !important;
+	}
+}
+
+/*Smaller than 1078px*/
+@media screen and (max-width: 1077px) {
+	.d2l-max-width {
+		max-width: none !important;
+	}
 }
