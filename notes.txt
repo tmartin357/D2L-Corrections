@@ -12,7 +12,7 @@ dl.childNodes[7].childNodes[1].setAttribute("title", "D2L Email")
 dl.childNodes[7].removeChild(dl.childNodes[7].childNodes[3]);
 
 
-/**********************************
+/**********************************/
 
 var dl = $('.d2l-minibar-activity');
 dl.childNodes[7].childNodes[1].childNodes[2].innerHTML = '<img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="">';
@@ -22,10 +22,53 @@ dl.childNodes[7].setAttribute('class', 'd2l-menuflyout-light d2l-left d2l-menufl
 dl.childNodes[7].childNodes[1].setAttribute('href','http://www.google.com');
 
 
-/*****************************
+/*****************************/
 
 var dl = $('.d2l-minibar-activity');
 var gotoemail = dl.childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[1].childNodes[1].childNodes[3].getAttribute('href');
 dl.childNodes[7].innerHTML = '<a href="'+gotoemail+'"><img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="D2L Email"></a>';
 var attr = dl.childNodes[7].getAttribute('class');
 dl.childNodes[7].setAttribute('class', 'D2L-Correct-email-link '+attr);
+
+/*********************************/
+
+
+if (document.URL == "https://spsu.view.usg.edu/d2l/home") { //home page
+	var courses = $$('.d2l-widget')[0]
+	var recon = $$('.d2l-widget')[1]
+	var libra = $$('.d2l-widget')[2]
+	var news = $$('.d2l-widget')[3]
+	var cal = $$('.d2l-widget')[4]
+	var qlinks = $$('.d2l-widget')[5]
+	
+	var leftparent = courses.parentNode
+	var rightparent = news.parentNode
+	
+	while (leftparent.firstChild) {
+		leftparent.removeChild(leftparent.firstChild);
+	}
+	while (rightparent.firstChild) {
+		rightparent.removeChild(rightparent.firstChild);
+	}
+	
+	leftparent.appendChild(courses);
+	leftparent.appendChild(qlinks);
+	leftparent.appendChild(news);
+	
+	rightparent.appendChild(libra);
+	rightparent.appendChild(cal);
+	rightparent.appendChild(recon);
+}
+
+
+
+
+/******************************************/
+
+var dl = $('.d2l-minibar-activity');
+var con = dl.childNodes[1].childNodes[1].childNodes[2];
+var spacer = con.childNodes[5];
+var mess = document.createElement('div');
+mess.setAttribute('class', "D2L-Correct-button-label");
+mess.innerHTML = "Messages";
+con.insertBefore(mess, spacer);

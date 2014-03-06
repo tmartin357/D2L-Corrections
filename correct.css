@@ -1,7 +1,7 @@
 /*Globals*/
 .D2L-Correct-email-link {
-    padding-top: 10px !important;
-    padding-left: 5px !important;
+    padding-top: 7px !important;
+    padding-left: 5px !important;	
 }
 .d_nb_cGlobal{
 	/*background-color: #00573D;
@@ -28,10 +28,20 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.d2l-minibar-activity-buckethandle{
+	display: flex !important;
+}
+.D2L-Correct-button-label {
+	padding-left: 3px;
+	color: rgba( 255, 255, 255, 0.9 );
+}
 
 /*Bigger than and equal to 1078px*/
 @media screen and (min-width: 1078px) {
 	.d2l-max-width {
+		max-width: 90% !important;
+	}
+	.d2l-page-bg {
 		max-width: 90% !important;
 	}
 	.d2l-menuflyout-link-hover {
@@ -44,7 +54,10 @@
 
 /*Smaller than 1078px*/
 @media screen and (max-width: 1077px) {
-	.d2l-max-width {
+	.d2l-max-width{
+		max-width: none !important;
+	}
+	.d2l-page-bg{
 		max-width: none !important;
 	}
 }
