@@ -1,13 +1,14 @@
 {
     "name": "D2L Corrections",
+	"web_accessible_resources": ["images/email.png"],
     "content_scripts": [
         {
          "matches": [
             "*://spsu.view.usg.edu/*"
          ],
-         "css": ["correct.css"],
+		 "css": ["correct.css"],
 		 "js": ["background.js"],
-         "run_at" : "document_end"
+		 "run_at" : "document_end"
         }
     ],
     "version":"0.0.0.5",
