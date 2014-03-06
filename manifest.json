@@ -1,5 +1,6 @@
 {
     "name": "D2L Corrections",
+	"icons": { "128" : "icons/128.png"},
 	"web_accessible_resources": ["images/email.png"],
     "content_scripts": [
         {
@@ -11,6 +12,6 @@
 		 "run_at" : "document_end"
         }
     ],
-    "version":"0.0.0.5",
+    "version":"0.0.0.7",
 	"manifest_version": 2
 }
