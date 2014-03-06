@@ -1,0 +1,31 @@
+var dl = $('.d2l-minibar-activity') - Three buttons
+dl.childNodes[7] - Third button div
+
+dl.childNodes[7].childNodes[1].childNodes[2] - img div
+dl.childNodes[7].childNodes[1].childNodes[2].innerHTML = 'foo';
+dl.childNodes[7].childNodes[1].childNodes[2].innerHTML = '<img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="">';
+
+dl.childNodes[7].childNodes[1].innerHTML = '<img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="">';
+
+dl.childNodes[7].childNodes[1].setAttribute("title", "D2L Email")
+
+dl.childNodes[7].removeChild(dl.childNodes[7].childNodes[3]);
+
+
+/**********************************
+
+var dl = $('.d2l-minibar-activity');
+dl.childNodes[7].childNodes[1].childNodes[2].innerHTML = '<img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="">';
+dl.childNodes[7].childNodes[1].setAttribute("title", "D2L Email");
+dl.childNodes[7].removeChild(dl.childNodes[7].childNodes[3]);
+dl.childNodes[7].setAttribute('class', 'd2l-menuflyout-light d2l-left d2l-menuflyout-closed');
+dl.childNodes[7].childNodes[1].setAttribute('href','http://www.google.com');
+
+
+/*****************************
+
+var dl = $('.d2l-minibar-activity');
+var gotoemail = dl.childNodes[1].childNodes[3].childNodes[1].childNodes[1].childNodes[1].childNodes[1].childNodes[3].getAttribute('href');
+dl.childNodes[7].innerHTML = '<a href="'+gotoemail+'"><img src="https://raw.github.com/tmartin357/D2L-Corrections/master/email.png" alt="D2L Email"></a>';
+var attr = dl.childNodes[7].getAttribute('class');
+dl.childNodes[7].setAttribute('class', 'D2L-Correct-email-link '+attr);
