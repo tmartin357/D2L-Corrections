@@ -6,6 +6,7 @@
             "*://spsu.view.usg.edu/*"
          ],
          "css": ["correct.css"],
+		 "js": ["background.js"],
          "run_at" : "document_end"
         }
     ],
