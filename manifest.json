@@ -12,6 +12,8 @@
 		 "run_at" : "document_end"
         }
     ],
-    "version":"0.0.9",
-	"manifest_version": 2
+    "version":"0.0.9.9",
+    "manifest_version": 2,
+    "description": "Fixes D2L for SPSU",
+    "homepage_url": "https://github.com/tmartin357/D2L-Corrections"
 }
