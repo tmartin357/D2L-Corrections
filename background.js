@@ -27,6 +27,17 @@ mess.setAttribute('class', "D2L-Correct-button-label");
 mess.innerHTML = "Email";
 con.appendChild(mess);
 
+var tallimg = chrome.extension.getURL("/images/new.D2L.LP.Main.png");
+
+dl.childNodes[1].childNodes[1].childNodes[2].childNodes[1].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[1].childNodes[1].childNodes[2].childNodes[2].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[1].childNodes[1].childNodes[2].childNodes[3].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[1].childNodes[1].childNodes[2].childNodes[4].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[4].childNodes[1].childNodes[2].childNodes[1].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[4].childNodes[1].childNodes[2].childNodes[2].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[4].childNodes[1].childNodes[2].childNodes[3].setAttribute("style", "background-image: url("+tallimg+") ;")
+dl.childNodes[4].childNodes[1].childNodes[2].childNodes[4].setAttribute("style", "background-image: url("+tallimg+") ;")
+
 //Homepage Re-Arrange
 if (document.URL == "https://spsu.view.usg.edu/d2l/home") { //home page
 	var courses = document.querySelectorAll('.d2l-widget')[0]

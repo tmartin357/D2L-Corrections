@@ -1,7 +1,7 @@
 {
     "name": "D2L Corrections",
 	"icons": { "128" : "icons/128.png"},
-	"web_accessible_resources": ["images/email.png"],
+	"web_accessible_resources": ["images/*"],
     "content_scripts": [
         {
          "matches": [
@@ -12,7 +12,7 @@
 		 "run_at" : "document_end"
         }
     ],
-    "version":"0.0.9.9",
+    "version":"0.1.0",
     "manifest_version": 2,
     "description": "Fixes D2L for SPSU",
     "homepage_url": "https://github.com/tmartin357/D2L-Corrections"
